@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" >
+<html>
+    <head>
+        <title>FREEWAYLANGUAGE</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <img src="images1/profile.jpeg" width="300px" height="150px">
+        <script type="text/JavaScript" src="result.js"></script>
+        <style>
+            body{
+                background-color: #000;
+                
+                
+            }
+            .loginBox{
+                width:300px;
+                height:350px;
+                background-color:rgb(30, 0, 57);
+                opacity:70%;
+                top:50%;
+                left:50%;
+                position:absolute;
+                transform:translate(-50%,-50%);
+                margin-top:45px;
+                margin-bottom:45px;
+                border-radius:7%;
+                opacity:1;
+               
+            }
+            span{
+                color:#fff;
+            }
+            .loginBox h1{
+                margin: 0;
+                padding:0;
+                font-weight:bold;
+                color:#fff;
+            }
+            .img{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .header{
+                background-color: #000;
+                display:flex;
+                justify-content:bottom;
+                align-items:bottom;
+                min-height: 10vh;
+                margin-top:400px;
+            }
+            
+            font{
+                color:blueviolet;
+                text-align: center;
+            }
+            .navigation{
+                height:100px;
+                width:1350px;
+                margin-bottom:10px;
+                background-color:#000;
+                text-align: center;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                border-radius:10px;
+                margin-bottom:5px;
+            }
+            .navigation ul{
+                display:flex;
+                width:350px;
+            }
+            .navigation ul li{
+                position:relative;
+                list-style:none;
+                width:70px;
+                height:70px;
+                z-index : 1;
+            }
+            .navigation ul li a{
+                position:relative;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction: column;
+            }
+            .navigation ul li a .icon{
+                position: relative;
+                display:block;
+                line-height:75px;
+                font-size:1.5em;
+                text-align:center;
+                transition: 0.5s;
+               
+            }
+            .navigation ul li:hover a .icon{
+                transform: translateY(-25px);
+            }
+            .navigation ul li a .text{
+                position:absolute;
+                font-weight:400;
+                font-size:0.75em;
+                letter-spacing:0.05em;
+                transition:0.5s;
+                opacity:0;
+            }
+            .navigation ul li:hover a .text{
+                opacity:1;
+                transform: translateY(10px);
+            }
+            
+        </style>
+        <body>
+            <section class="loginBox">
+                <h1>Name:<span id="result-Name"></span>
+                    <br>
+                Password:<span id="result-Password"></span></h1>
+            </section>
+            <header class="header">
+           <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="login.html">
+                        <span class="icon"><i class='bx bx-log-in'></i></span>
+                        <span class="text">Login</spa>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="main.html">
+                        <span class="icon"><i class='bx bx-home-alt-2'></i></span>
+                        <span class="text">Home</spa>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="signin.html">
+                        <span class="icon"><i class='bx bxl-instagram'></i></span>
+                        <span class="text">about</spa>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="signin.html">
+                        <span class="icon"><i class='bx bx-globe'></i></span>
+                        <span class="text">Language</spa>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="services.html">
+                        <span class="icon"><i class='bx bx-sitemap'></i></span>
+                        <span class="text">services</spa>
+                    </a>
+                </li>
+            </ul>
+           </div>
+        </header>
+        </body>
+      
+    </head>
+</html>
